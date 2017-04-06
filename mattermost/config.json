@@ -1,0 +1,95 @@
+{
+    "ServiceSettings": {
+        "ListenAddress": ":8065",
+        "MaximumLoginAttempts": 10,
+        "SegmentDeveloperKey": "",
+        "GoogleDeveloperKey": "",
+        "EnableOAuthServiceProvider": false,
+        "EnableIncomingWebhooks": false,
+        "EnableOutgoingWebhooks": false,
+        "EnablePostUsernameOverride": false,
+        "EnablePostIconOverride": false,
+        "EnableTesting": false,
+        "EnableSecurityFixAlert": true
+    },
+    "TeamSettings": {
+        "SiteName": "Mattermost",
+        "MaxUsersPerTeam": 50,
+        "EnableTeamCreation": true,
+        "EnableUserCreation": true,
+        "RestrictCreationToDomains": "",
+        "RestrictTeamNames": true,
+        "EnableTeamListing": false
+    },
+    "SqlSettings": {
+        "DriverName": "mysql",
+        "DataSource": "MM_USERNAME:MM_PASSWORD@tcp(DB_HOST:3306)/MM_DBNAME?charset=utf8mb4,utf8",
+        "DataSourceReplicas": [],
+        "MaxIdleConns": 10,
+        "MaxOpenConns": 10,
+        "Trace": false,
+        "AtRestEncryptKey": "MM_AT_REST_ENCRYPT_KEY"
+    },
+    "LogSettings": {
+        "EnableConsole": true,
+        "ConsoleLevel": "DEBUG",
+        "EnableFile": false,
+        "FileLevel": "INFO",
+        "FileFormat": "",
+        "FileLocation": ""
+    },
+    "FileSettings": {
+        "DriverName": "local",
+        "Directory": "/opt/mattermost/storage/data/",
+        "EnablePublicLink": true,
+        "PublicLinkSalt": "MM_PUBLIC_LINK_SALT",
+        "ThumbnailWidth": 120,
+        "ThumbnailHeight": 100,
+        "PreviewWidth": 1024,
+        "PreviewHeight": 0,
+        "ProfileWidth": 128,
+        "ProfileHeight": 128,
+        "InitialFont": "luximbi.ttf",
+        "AmazonS3AccessKeyId": "",
+        "AmazonS3SecretAccessKey": "",
+        "AmazonS3Bucket": "",
+        "AmazonS3Region": ""
+    },
+    "EmailSettings": {
+        "EnableSignUpWithEmail": true,
+        "SendEmailNotifications": false,
+        "RequireEmailVerification": false,
+        "FeedbackName": "",
+        "FeedbackEmail": "",
+        "SMTPUsername": "",
+        "SMTPPassword": "",
+        "SMTPServer": "",
+        "SMTPPort": "",
+        "ConnectionSecurity": "",
+        "InviteSalt": "MM_INVITE_SALT",
+        "PasswordResetSalt": "MM_RESET_SALT",
+        "ApplePushServer": "",
+        "ApplePushCertPublic": "",
+        "ApplePushCertPrivate": ""
+    },
+    "RateLimitSettings": {
+        "EnableRateLimiter": true,
+        "PerSec": 10,
+        "MemoryStoreSize": 10000,
+        "VaryByRemoteAddr": true,
+        "VaryByHeader": ""
+    },
+    "PrivacySettings": {
+        "ShowEmailAddress": true,
+        "ShowFullName": true
+    },
+    "GitLabSettings": {
+        "Enable": false,
+        "Secret": "",
+        "Id": "",
+        "Scope": "",
+        "AuthEndpoint": "",
+        "TokenEndpoint": "",
+        "UserApiEndpoint": ""
+    }
+}
